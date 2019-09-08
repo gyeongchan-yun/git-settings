@@ -3,7 +3,7 @@
 function check_and_rename_file() {
   if [ -f $1 ]; then
     echo "[WARNING] $1 already exists."
-    mv $1 $1_temp
+    cp $1 $1_temp
     echo "[INFO] Rename $1 to ${1}_temp"
   fi
 }
@@ -36,7 +36,7 @@ else
   fi
   check_and_rename_file $dst/.git/config
   check_and_rename_file $dst/.gitignore
-  cp .gitconfig $dst/.git/config
+  echo .gitconfig >> $dst/.git/config
   echo "successfully copy .gitconfig to $dst"
   cp .gitignore $dst
   echo "successfully copy .gitignore to $dst"
