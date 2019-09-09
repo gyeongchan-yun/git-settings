@@ -25,7 +25,7 @@
     d = diff
     dh = diff HEAD 
     # git log
-    lg = !git --no-pager log --graph --abbrev-commit --decorate --all --oneline
+    lg = log --graph --abbrev-commit --decorate --all --oneline
     # git checkout 
     co = checkout
     cob = checkout -b
