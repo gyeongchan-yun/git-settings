@@ -36,7 +36,7 @@ else
   fi
   check_and_rename_file $dst/.git/config
   check_and_rename_file $dst/.gitignore
-  echo .gitconfig >> $dst/.git/config
+  cat .gitconfig >> $dst/.git/config
   echo "successfully copy .gitconfig to $dst"
   cp .gitignore $dst
   echo "successfully copy .gitignore to $dst"

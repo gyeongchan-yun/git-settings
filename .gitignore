@@ -36,3 +36,9 @@ Icon?
 Thumbs.db
 
 *.lock
+
+# Byte-compiled / optimized / DLL files for python #
+####################################################
+__pycache__/
+*.py[cod]
+*$py.class
